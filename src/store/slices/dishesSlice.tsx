@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import IDishCard from "../../types/interfaces/IDishCard";
 
-const getAllDishes = axios.get('http://localhost:8000/dishes')
+const getAllDishes = axios.get('https://matars-epicure-server.onrender.com//dishes')
 const { data } = await getAllDishes;
 
 export const dishesSlice = createSlice({

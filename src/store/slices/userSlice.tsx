@@ -1,20 +1,3 @@
-// import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-// import axios from "axios";
-// import IUser from "../../types/interfaces/IUser";
-
-// interface IUserState{
-//     loading: boolean,
-//     error: null | string,
-//     data: IUser | null
-// }
-
-// const initialState:IUserState = {
-//     loading: false,
-//     error: null,
-//     data: null
-// }
-
-
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import IUser from "../../types/interfaces/IUser";
 import axios from "axios";
@@ -37,7 +20,7 @@ export const logInUser = createAsyncThunk(
     "users/login",
     async (credentials: Credentials, thunkAPI) => {
         try {
-            const response = await axios.post("http://localhost:8000/users/login", credentials);
+            const response = await axios.post("https://matars-epicure-server.onrender.com//users/login", credentials);
             return response.data as IUser;
         }
         catch (err: any) {

@@ -14,7 +14,7 @@ const ChefCard: React.FC<IChefCard> = (props: IChefCard) => {
     const token = sessionStorage.getItem('token');
     const parsedToken = token ? JSON.parse(token) : '';
     const axiosInstance = axios.create({
-        baseURL: 'http://localhost:8000',
+        baseURL: 'https://matars-epicure-server.onrender.com/',
         headers: {
             Authorization: `Bearer ${parsedToken.token}`,
         },

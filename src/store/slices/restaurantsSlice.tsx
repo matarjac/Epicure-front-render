@@ -2,13 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import IRestaurant from "../../types/interfaces/mainInterfaces/IRestaurant";
 
-// const getAllRestaurants = fetch('http://localhost:8000/restaurants', { method: 'GET' })
+// const getAllRestaurants = fetch('https://matars-epicure-server.onrender.com//restaurants', { method: 'GET' })
 //     .then(response => response.json())
 //     .then((data) => { return data })
 //     .catch((err) => console.log(err));
 
 // const restaurantsList = await getAllRestaurants;
-const getAllRestaurants = axios.get('http://localhost:8000/restaurants');
+const getAllRestaurants = axios.get('https://matars-epicure-server.onrender.com//restaurants');
 const { data } = await getAllRestaurants;
 
 

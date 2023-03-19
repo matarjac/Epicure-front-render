@@ -10,7 +10,7 @@ const RestaurantCard: React.FC<IRestaurantCard> = (props:IRestaurantCard) => {
     const handleDeleteRestaurant = async (id: string) => {
       const body = { id: id };
       try {
-          await axios.delete(`http://localhost:8000/restaurants/delete`, { data: body });
+          await axios.delete(`https://matars-epicure-server.onrender.com//restaurants/delete`, { data: body });
           if(props.filterRestaurant){
             props.filterRestaurant(id);
           }

@@ -40,7 +40,7 @@ const SignInPage: React.FC = () => {
             password: password
         }
         try {
-            const { data } = await axios.post('http://localhost:8000/users/login', credentials)
+            const { data } = await axios.post('https://matars-epicure-server.onrender.com//users/login', credentials)
             console.log("user>>>", data)
             const userToSave = {
                 firstName: data.user.firstName,
