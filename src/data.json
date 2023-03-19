@@ -1,0 +1,173 @@
+{
+    "chefs": [
+      {
+        "fullName": "Meir Adoni",
+        "isChefOfTheWeek": false,
+        "imgUrl": "",
+        "description": "Meir Adoni is a renowned Israeli chef, known for his innovative fusion cuisine that blends traditional Middle Eastern flavors with contemporary cooking techniques.",
+        "restaurants": [
+          {
+            "name": "Nur",
+            "isPopular": true,
+            "img": "https://images.squarespace-cdn.com/content/v1/586e6d2ee6f2e1de113055c8/1625065126230-VAGJDTDXP1A27YTKQRF4/NUR_032317_dishes_Photographed_by_Paul_Wagtouicz_75.jpg?format=2500w",
+            "chef": "Meir Adoni",
+            "rating": 4,
+            "dishes": [
+              {
+                "name": "Lamb & Fig Tagine",
+                "imgUrl": "",
+                "rating": 4
+              },
+              {
+                "name": "Halibut with Za'atar Butter",
+                "imgUrl": "",
+                "rating": 5
+              },
+              {
+                "name": "Mushroom & Pomegranate Salad",
+                "imgUrl": "",
+                "rating": 3
+              },
+              {
+                "name": "Grilled Octopus",
+                "imgUrl": "",
+                "rating": 4
+              }
+            ]
+          },
+          {
+            "name": "Luchiano",
+            "isPopular": true,
+            "img": "./Assets/restaurants-images/tiger-lily.svg",
+            "chef": "Meir Adoni",
+            "rating": 4,
+            "dishes": [
+              {
+                "name": "Wild Boar Ragu",
+                "imgUrl": "",
+                "rating": 4
+              },
+              {
+                "name": "Tagliatelle with Truffle Butter",
+                "imgUrl": "",
+                "rating": 5
+              },
+              {
+                "name": "Roasted Chicken with Herbs",
+                "imgUrl": "",
+                "rating": 3
+              },
+              {
+                "name": "Risotto with Porcini Mushrooms",
+                "imgUrl": "",
+                "rating": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fullName": "Eyal Shani",
+        "isChefOfTheWeek": false,
+        "imgUrl": "",
+        "description": "Meir Adoni is a renowned Israeli chef, known for his innovative fusion cuisine that blends traditional Middle Eastern flavors with contemporary cooking techniques.",
+        "restaurants": [
+          {
+            "name": "Hasalon",
+            "isPopular": true,
+            "img": "https://static.wixstatic.com/media/6dd698_e1bea281cc964ac49794648e3496237d~mv2.jpg/v1/fit/w_2500,h_1330,al_c/6dd698_e1bea281cc964ac49794648e3496237d~mv2.jpg",
+            "chef": "Eyal Shani",
+            "rating": 4,
+            "dishes": [
+              {
+                "name": "Sabich Meforak",
+                "imgUrl": "",
+                "rating": 4
+              },
+              {
+                "name": "Sashimmi",
+                "imgUrl": "",
+                "rating": 5
+              },
+              {
+                "name": "Cauliflower",
+                "imgUrl": "",
+                "rating": 3
+              },
+              {
+                "name": "Grilled Octopus",
+                "imgUrl": "",
+                "rating": 4
+              }
+            ]
+          },
+          {
+            "name": "Hamiznon",
+            "isPopular": false,
+            "dishes": [
+              {
+                "name": "Pita minnut steak",
+                "imgUrl": "",
+                "rating": 4
+              },
+              {
+                "name": "Pita white",
+                "imgUrl": "",
+                "rating": 5
+              },
+              {
+                "name": "Chicken sandwitch",
+                "imgUrl": "",
+                "rating": 3
+              },
+              {
+                "name": "salad",
+                "imgUrl": "",
+                "rating": 4
+              }
+            ]
+          }
+        ]
+      },
+          {
+            "fullName": "Assaf Kats",
+            "isChefOfTheWeek": true,
+            "imgUrl": "",
+            "description": "Meir Adoni is a renowned Israeli chef, known for his innovative fusion cuisine that blends traditional Middle Eastern flavors with contemporary cooking techniques.",
+            "restaurants": [
+              {
+                "name": "Assaf hamchona",
+                "isPopular": false,
+                "dishes": [
+                  {
+                    "name": "Mechona ra'ah",
+                    "imgUrl": "",
+                    "rating": 5
+                  },
+                  {
+                    "name": "nirshamta lalimudim?",
+                    "imgUrl": "",
+                    "rating": 3
+                  }
+                ]
+              },
+              {
+                "name": "Makiato",
+                "isPopular": false,
+                "dishes": [
+                  {
+                    "name": "Rice with noodles",
+                    "imgUrl": "",
+                    "rating": 4
+                  },
+                  {
+                    "name": "Tomato with vegetables",
+                    "imgUrl": "",
+                    "rating": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }

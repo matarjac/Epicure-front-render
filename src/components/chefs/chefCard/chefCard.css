@@ -1,0 +1,33 @@
+.chef-card-container {
+  position: relative;
+}
+
+.chef-card-container > img {
+  height: 338px;
+  width: 378px;
+  object-fit: cover;
+}
+
+.chef-card-container > span {
+  height: 78px;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+
+  text-align: center;
+  letter-spacing: 2.67px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, 0);
+}
+
+.close-chef-btn {
+  position: absolute;
+  transform: translate(-100%, 0);
+}

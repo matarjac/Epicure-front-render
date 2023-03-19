@@ -1,0 +1,46 @@
+.dish-card-container {
+  width: 380px;
+  height: 654px;
+}
+
+#dish-image {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#dish-ingredients {
+  max-width: 275px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  padding: 10px 20px;
+}
+
+#dish-name {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  max-width: 200px;
+  max-height: 94px;
+}
+
+#food-type-icons-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 5%;
+}
+
+#price-section {
+  display: flex;
+}
+
+#price-section > span {
+  font-weight: 200;
+  font-size: 24px;
+  padding: 0 5px;
+}

@@ -1,0 +1,78 @@
+#rest-hero-img {
+  width: 1186px;
+  height: 425px;
+}
+
+#restaurant-details-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#restaurant-details-hero > img {
+  object-fit: cover;
+}
+
+#dishes-category-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+#dishes-category-buttons-container > button {
+  padding: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.92px;
+}
+
+.dishes-category {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.92px;
+  color: #000000;
+}
+
+.dishes-category:hover {
+  border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
+}
+
+#restaurant-page-name {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 3.67px;
+}
+
+#chef-name {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.97px;
+}
+
+#open-status {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.97px;
+  display: flex;
+  gap: 10px;
+}
+
+#dishes-menu-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3%;
+  min-height: 20vh;
+}

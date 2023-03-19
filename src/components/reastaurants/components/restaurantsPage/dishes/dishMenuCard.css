@@ -1,0 +1,54 @@
+.dish-menu-card-container {
+  width: 272px;
+  height: 413px;
+  background-color: #f9f4ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.dish-menu-card-container > img {
+  width: 272px;
+  height: 171.71px;
+  margin-bottom: 3%;
+}
+
+#dish-menu-card-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.67px;
+}
+
+#dish-menu-card-ingredients {
+  width: 222px;
+  height: 137px;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.97px;
+}
+
+.price-container {
+  height: 1px;
+  background-color: #979797;
+  width: 80%;
+  position: relative;
+}
+
+.price-container > span {
+  position: absolute;
+  background-color: #f9f4ea;
+  padding: 5px;
+  left: 50%;
+  font-weight: 400;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.97px;
+}

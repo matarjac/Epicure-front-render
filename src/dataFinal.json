@@ -1,0 +1,279 @@
+{
+    "chefOfTheWeek": 1,
+    
+    "restaurants": 
+    [
+        
+        {
+            "img": "https://images.unsplash.com/photo-1611765083444-a3ce30f1c885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+            "name": "Luchiano",
+            "id": 1,
+            "chef": "Meir Adoni",
+            "rating": 3,
+            "chefID": 5,
+            "dishes":[1,6,2],
+            "openHour": 10,
+            "closeHour": 24,
+            "isPopular": true,
+            "isNew": false
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+            "name": "Hasalon",
+            "id": 2,
+            "chef": "Eyal Shani",
+            "rating": 5,
+            "chefID": 2,
+            "isPopular": true,
+            "isNew": false,
+            "openHour": 11,
+            "closeHour": 22,
+            "dishes":[1,2,8]
+        },
+        {
+            "img": "https://imageproxy.wolt.com/venue/5e6905a759fe70f82a8016ef/8f18b1a8-63ae-11ea-980e-0a58647cdb07_yaelitz-14.jpg",
+            "name": "Hamiznon",
+            "id": 3,
+            "chef": "Eyal Shani",
+            "rating": 4,
+            "chefID": 2,
+            "isPopular": false,
+            "isNew": true,
+            "openHour": 14,
+            "closeHour": 23,
+            "dishes":[2,3,4]
+            
+        },
+        {
+            "img": "https://www.mashya.co.il/wp-content/uploads/2021/08/KARELA-5-scaled.jpg",
+            "name": "Mashya",
+            "id": 4,
+            "chef": "Yossi Shitrit",
+            "rating": 3,
+            "chefID": 5,
+            "isPopular": false,
+            "isNew": false,
+            "openHour": 16,
+            "closeHour": 23,
+            "dishes":[3,6,9]
+        },
+        {
+            "img": "https://res.cloudinary.com/dqdq2mu2e/image/upload/v1/assafgranit/restaurants/mahne_bg_3x.jpg?v=08-03-2020",
+            "name": "Shabur",
+            "id": 5,
+            "chef": "Assaf Granit",
+            "rating": 5,
+            "chefID": 1,
+            "isPopular": true,
+            "isNew": false,
+            "openHour": 11,
+            "closeHour": 22,
+            "dishes": [1,2,8]
+        },
+        {
+            "img": "https://img.mako.co.il/2021/03/04/salat_autoOrient_i.jpg",
+            "id": 6,
+            "name": "Mahne Yehuda",
+            "chef": "Assaf Granit",
+            "rating": 5,
+            "chefID": 1,
+            "isPopular": false,
+            "isNew": false,
+            "openHour": 11,
+            "closeHour": 22,
+            "dishes": [3,4,6]
+        }
+    ],
+
+    "chefs":
+    [
+        {
+            "name": "Assaf Granit",
+            "id": 1,
+            "isChefOfTheWeek": false,
+            "img": "https://ynet-images1.yit.co.il/picserver5/crop_images/2021/01/18/H1cpSz7100/H1cpSz7100_0_0_1024_682_0_x-large.jpg",
+            "isNew": true,
+            "mostViewed": true
+            
+        },
+        {
+            "name": "Eyal Shani",
+            "id": 2,
+            "isChefOfTheWeek": false,
+            "img": "https://cdn.vox-cdn.com/thumbor/P85cCLzV2qbWG_3zdSxLSc1Hds8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23649125/eyal_shani_miznon.jpeg",
+            "isNew": true,
+            "mostViewed": true
+        },
+        {
+            "name": "Aviv Moshe",
+            "id": 3,
+            "isChefOfTheWeek": false,
+            "img": "https://upload.wikimedia.org/wikipedia/commons/1/10/%D7%A9%D7%A3_%D7%90%D7%91%D7%99%D7%91_%D7%9E%D7%A9%D7%94.jpg",
+            "isNew": true,
+            "mostViewed": false
+        },
+        {
+            "name": "Omer Miller",
+            "id": 4,
+            "isChefOfTheWeek": false,
+            "img": "http://bulthaupculinary.com/sites/default/files/shef-images/shef_omer_large.jpg",
+            "isNew": false,
+            "mostViewed": false
+        },
+        {
+            "name": "Meir Adoni",
+            "id": 5,
+            "isChefOfTheWeek": false,
+            "img": "http://visionsgourmandes.com/wp-content/uploads/2015/03/Chef-Meir-Adoni1.jpg",
+            "isNew": true,
+            "mostViewed": true
+        },
+        {
+            "name": "Orna & ella",
+            "id": 6,
+            "isChefOfTheWeek": false,
+            "img": "https://images1.ynet.co.il/PicServer5/2018/01/08/8269331/826932701000100438437no.jpg",
+            "isNew": true,
+            "mostViewed": false
+        },
+        {
+            "name": "Shahaf Shabtay",
+            "id": 7,
+            "isChefOfTheWeek": false,
+            "img": "https://www.smartpress.cz/image/data/author/shabtay/shahaf-shabtay-01.jpg",
+            "isNew": false,
+            "mostViewed": true
+        },
+        {
+            "name": "Yossi Shitrit",
+            "id": 8,
+            "isChefOfTheWeek": true,
+            "img": "https://ynet-images1.yit.co.il/picserver5/wcm_upload/2021/07/14/SkGT4gchau/Yossi_Shitrit_with_giant_doner_kebab__foto_Ilya_Melnikov.jpg",
+            "isNew": false,
+            "isPopular": false,
+            "mostViewed": false
+        },
+        {
+            "name": "Yarden Shay",
+            "id": 9,
+            "isChefOfTheWeek": false,
+            "img": "https://medias.timeout.co.il/www/uploads/2021/10/1633853938_1247207_46838-e1636962786824.jpg",
+            "isNew": false,
+            "mostViewed": true
+        }
+    ],
+
+    "dishes":
+    [
+        {
+            "name": "Pasta",
+            "restaurantID": 1,
+            "id": 1,
+            "ingredients": "kuskus, water",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+            "price": 65,
+            "isPopular": false,
+            "category": "launch"
+        },
+        {
+            "name": "Pad Ki Mao",
+            "restaurantID": 2,
+            "id": 2,
+            "ingredients": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+            "foodType": ["spicy", "Vegetarian"],
+            "img": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 75,
+            "isPopular": true,
+            "category": "launch"
+        },
+        {
+            "name": "Garbanzo Frito",
+            "restaurantID": 2,
+            "id": 3,
+            "ingredients": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 60,
+            "isPopular": true,
+            "category": "launch"
+        },
+        {
+            "name": "Smoked Pizza",
+            "restaurantID": 2,
+            "id": 4,
+            "ingredients": "Basil dough, cashew 'butter', demi-glace,bison & radish",
+            "foodType": ["vegan"],
+            "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": true,
+            "category": "launch"
+        },
+        {
+            "name": "kuskus",
+            "restaurantID": 2,
+            "id": 5,
+            "ingredients": "kuskus, water",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1610657592176-23d38cb78116?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": false,
+            "category": "breakfast"
+        },
+        {
+            "name": "Smoked Pizza",
+            "restaurantID": 2,
+            "id": 6,
+            "ingredients": "Basil dough, cashew 'butter', demi-glace,bison & radish",
+            "foodType": ["vegan"],
+            "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": true,
+            "category": "dinner"
+        },
+        {
+            "name": "kuskus",
+            "restaurantID": 2,
+            "id": 7,
+            "ingredients": "kuskus, water",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1610657592176-23d38cb78116?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": false,
+            "category": "dinner"
+        },
+        {
+            "name": "Smoked Pizza",
+            "restaurantID": 2,
+            "id": 8,
+            "ingredients": "Basil dough, cashew 'butter', demi-glace,bison & radish",
+            "foodType": ["vegan"],
+            "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": true,
+            "category": "dinner"
+        },
+        {
+            "name": "kuskus",
+            "restaurantID": 2,
+            "id": 9,
+            "ingredients": "kuskus, water",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1610657592176-23d38cb78116?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "price": 45,
+            "isPopular": false,
+            "category": "dinner"
+        },
+        {
+            "name": "CornFlakes",
+            "restaurantID": 2,
+            "id": 10,
+            "ingredients": "corn, milk",
+            "foodType": ["spicy"],
+            "img": "https://images.unsplash.com/photo-1588710920403-dacfbae1a640?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
+            "price": 45,
+            "isPopular": false,
+            "category": "breakfast"
+        }
+    ]
+}

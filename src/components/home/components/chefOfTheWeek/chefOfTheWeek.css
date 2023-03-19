@@ -1,0 +1,127 @@
+#chef-of-the-week-section {
+  margin-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.chef-of-the-week-titles {
+  height: 35px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+#chefs-description {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+}
+
+#chefs-description > p {
+  display: inline;
+  width: 100%;
+  max-height: 400px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5vw;
+  line-height: 35px;
+  padding: 5%;
+  height: fit-content;
+  text-align: justify;
+  letter-spacing: 1.25px;
+}
+
+#chef-image-container {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  margin-top: 5%;
+}
+
+#chef-image-container > span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5vw;
+  position: absolute;
+  bottom: 0px;
+}
+
+#chef-image-container > img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+}
+
+#chefs-restaurants {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.week-restaurant-card {
+  margin: 10px;
+  width: 231px;
+  height: 357px;
+  background-color: #f9f4ea;
+  text-align: center;
+}
+
+.week-restaurant-card > img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.week-restaurant-card > span {
+  width: 118px;
+  height: 94px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 2.67px;
+}
+.chefs-restaurants-title {
+  text-align: left;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 750px) {
+  #chefs-description {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #chef-image-container > span {
+    height: 20%;
+    font-size: 30px;
+  }
+
+  #chefs-description > p {
+    font-size: 20px;
+  }
+
+  .week-restaurant-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.sign-up-in-page {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #inputs-sign-in-container > input {
+    width: 100%;
+  }
+}

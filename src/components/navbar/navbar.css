@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  font-family: "Helvetica Neue";
+  letter-spacing: 1.92px;
+  font-weight: 200;
+  font-size: 18px;
+}
+.navbar-button:hover {
+  border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav {
+  height: 64px;
+  padding: 15px 5vw 0 5vw;
+  background: white;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+#navbar-container {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#navbar-container:first-child {
+  height: 33.5px;
+}
+
+#navbar-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#navbar-buttons-leftside-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  gap: 10px;
+}
+
+#navbar-buttons-rightside-container {
+  display: flex;
+  gap: 15px;
+}
+
+#navbar-input {
+  all: unset;
+  text-align: start;
+  width: 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("../../../public/Assets/search-icon.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 10px 30px 10px 10px;
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+  height: 30px;
+  letter-spacing: 1.29px;
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+
+#navbar-input:hover {
+  cursor: pointer;
+}
+
+#navbar-input:focus {
+  width: 400px;
+  border: 1px solid #ccc;
+}
+form {
+  height: 30px;
+}
+#humburger-menu {
+  all: unset;
+  display: none;
+}
+
+#humburger-menu > img {
+  scale: 130%;
+}
+#humburger-menu > img:hover {
+  cursor: pointer;
+}
+
+#mobile-logo-img {
+  display: none;
+}
+#search-navbar-button-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  /* #navbar-buttons-container {
+    display: none;
+  } */
+  .logo {
+    display: none;
+  }
+
+  #navbar-buttons-container {
+    justify-content: flex-end;
+    width: fit-content;
+  }
+
+  #navbar-buttons-leftside-container {
+    display: none;
+  }
+
+  #mobile-logo-img {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+
+  #humburger-menu {
+    display: inline-block;
+  }
+
+  #navbar-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  form {
+    display: none;
+  }
+  #search-navbar-button-mobile {
+    display: inline;
+  }
+}
+
+.order-cart-container {
+  position: absolute;
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  right: 20px;
+}

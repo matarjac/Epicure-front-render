@@ -1,0 +1,23 @@
+#filters-buttons-container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.dynamic-filter {
+  padding: 18px 22px;
+}
+
+.dynamic-filter:hover {
+  background-color: #d0cfcf;
+}
+
+.dynamic-filter:focus {
+  background-color: #d0cfcf;
+}
+
+.modal-button-container {
+  position: relative;
+}

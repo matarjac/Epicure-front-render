@@ -1,0 +1,52 @@
+#about-us-section-container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  background-color: #fafafa;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#about-us-text-downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+#about-us-title {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+
+  letter-spacing: 2.14px;
+  text-transform: uppercase;
+}
+
+#about-us-para {
+  max-width: 60%;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2.14px;
+}
+
+#download-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+@media screen and (max-width: 750px) {
+  #about-us-section-container {
+    flex-direction: column;
+  }
+  #logo {
+    scale: 50%;
+  }
+
+  #about-us-para {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+hr {
+  all: unset;
+  border-top: 1px black solid;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.footer-links {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.92px;
+}
+
+@media screen and (max-width: 750px) {
+  footer > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-links {
+    padding: 10px 0;
+  }
+}
