@@ -34,7 +34,7 @@ export default function SignUpPage() {
     }
 
     try {
-      const { data } = await axios.post('https://matars-epicure-server.onrender.com//users', body)
+      const { data } = await axios.post('https://matars-epicure-server.onrender.com/users', body)
       console.log(data);
       emptyInputs();
       navigate(-1);

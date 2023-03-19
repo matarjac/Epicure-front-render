@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from 'axios';
 import IChef from "../../types/interfaces/mainInterfaces/IChef";
 
-const getAllChefs = axios.get('https://matars-epicure-server.onrender.com//chefs');
+const getAllChefs = axios.get('https://matars-epicure-server.onrender.com/chefs');
 const { data } = await getAllChefs;
 
 export const chefsSlice = createSlice({

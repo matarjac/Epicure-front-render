@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import IDishCard from "../../types/interfaces/IDishCard";
 
-const getAllDishes = axios.get('https://matars-epicure-server.onrender.com//dishes')
+const getAllDishes = axios.get('https://matars-epicure-server.onrender.com/dishes')
 const { data } = await getAllDishes;
 
 export const dishesSlice = createSlice({
@@ -21,25 +21,25 @@ export const dishesSlice = createSlice({
                 case "popular":
                     state.value = data;
                     state.value = state.value.filter(
-                        (dish:IDishCard) => dish.isPopular === true
+                        (dish: IDishCard) => dish.isPopular === true
                     )
                     break;
                 case "breakfast":
                     state.value = data;
                     state.value = state.value.filter(
-                        (dish:IDishCard) => dish.category === "breakfast"
+                        (dish: IDishCard) => dish.category === "breakfast"
                     )
                     break;
                 case "launch":
                     state.value = data;
                     state.value = state.value.filter(
-                        (dish:IDishCard) => dish.category === "launch"
+                        (dish: IDishCard) => dish.category === "launch"
                     )
                     break;
                 case "dinner":
                     state.value = data;
                     state.value = state.value.filter(
-                        (dish:IDishCard) => dish.category === "dinner"
+                        (dish: IDishCard) => dish.category === "dinner"
                     )
                     break;
                 default:

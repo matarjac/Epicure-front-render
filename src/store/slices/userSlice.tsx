@@ -20,7 +20,7 @@ export const logInUser = createAsyncThunk(
     "users/login",
     async (credentials: Credentials, thunkAPI) => {
         try {
-            const response = await axios.post("https://matars-epicure-server.onrender.com//users/login", credentials);
+            const response = await axios.post("https://matars-epicure-server.onrender.com/users/login", credentials);
             return response.data as IUser;
         }
         catch (err: any) {
