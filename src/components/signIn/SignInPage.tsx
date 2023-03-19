@@ -67,7 +67,8 @@ const SignInPage: React.FC = () => {
 
     const handleLogOut = () => {
         sessionStorage.removeItem("user");
-        window.location.reload();
+        // window.location.reload();
+        navigate("/");
     }
 
     return (
