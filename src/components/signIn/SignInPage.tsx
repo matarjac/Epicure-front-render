@@ -42,7 +42,8 @@ const SignInPage: React.FC = () => {
         try {
             const { data } = await axios.post('https://matars-epicure-server.onrender.com/users/login', credentials, {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': 'https://matar-epicure.onrender.com'
                 }
             });
             console.log("user>>>", data)
