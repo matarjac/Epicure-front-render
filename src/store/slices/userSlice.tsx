@@ -40,24 +40,10 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         loggedUser: (state, action) => {
-            // console.log(action.payload);
             state.data = action.payload;
         }
     }
-    // extraReducers(builder) {
-    //     builder
-    //         .addCase(logInUser.pending, (state, action) => {
-    //             state.loading = true;
-    //         })
-    //         .addCase(logInUser.fulfilled, (state, action: PayloadAction<IUser>) => {
-    //             state.loading = false;
-    //             state.data = action.payload;
-    //         })
-    //         .addCase(logInUser.rejected, (state, action) => {
-    //             state.loading = false;
-    //             state.error = action.error.message;
-    //         })
-    // }
+
 });
 
 export const { loggedUser } = userSlice.actions;
