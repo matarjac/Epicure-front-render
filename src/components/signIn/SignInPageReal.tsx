@@ -34,15 +34,18 @@ const SignInPage: React.FC = () => {
         user ? setIsLoggedIn(true) : setIsLoggedIn(false);
     }, [])
 
-    const handleLogIn = async (e:any) => {
-        e.preventDefault();
+    const handleLogIn = async () => {
         const credentials: Credentials = {
             email: email,
             password: password
         }
         try {
-            const { data } = await axios.post('https://matars-epicure-server.onrender.com/users/login', credentials);
-            console.log("user>>>", data);
+            const { data } = await axios.post('https://matars-epicure-server.onrender.com/users/login', credentials, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            console.log("user>>>", data)
             const userToSave = {
                 firstName: data.user.firstName,
                 lastName: data.user.lastName,
@@ -68,7 +71,7 @@ const SignInPage: React.FC = () => {
 
     const handleLogOut = () => {
         sessionStorage.removeItem("user");
-        window.location.reload();
+        // window.location.reload();
         navigate("/");
     }
 
@@ -78,21 +81,20 @@ const SignInPage: React.FC = () => {
             <div className='input-containers' id="sign-in-form-container">
                 {!isLoggedIn ?
                     <>
-                        <form onSubmit={handleLogIn}>
-                            <h1>SIGN IN</h1>
-                            <div id="inputs-sign-in-container">
-                                <input type="text" placeholder="Email address" value={email} onChange={(e) => handleEmailInputChange(e)} />
-                                <input type="password" placeholder="Password" value={password} onChange={(e) => handlePasswordInputChange(e)} />
-                            </div>
-                            <div id="log-in-buttons-container">
-                                <input type="submit" id="log-in-btn">LOGIN</input>
-                                <button id="forgot-password-btn">Forgot password?</button>
-                            </div>
-                            <div id="hr-line-div-sign-in">
-                                <span>or</span>
-                            </div>
-                            <button id="sign-up-btn" onClick={() => navigate("/sign-up")}>SIGN UP</button>
-                        </form>
+                        <h1>SIGN IN</h1>
+                    
+                        <div id="inputs-sign-in-container">
+                            <input type="text" placeholder="Email address" value={email} onChange={(e) => handleEmailInputChange(e)} />
+                            <input type="password" placeholder="Password" value={password} onChange={(e) => handlePasswordInputChange(e)} />
+                        </div>
+                        <div id="log-in-buttons-container">
+                            <button id="log-in-btn" onClick={handleLogIn}>LOGIN</button>
+                            <button id="forgot-password-btn">Forgot password?</button>
+                        </div>
+                        <div id="hr-line-div-sign-in">
+                            <span>or</span>
+                        </div>
+                        <button id="sign-up-btn" onClick={() => navigate("/sign-up")}>SIGN UP</button>
                     </>
                     :
                     <>
